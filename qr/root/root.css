@@ -1,0 +1,124 @@
+html,body {
+	background-color: #eee;
+}
+* {
+	box-sizing: border-box;
+}
+.container {
+	width: 100%;
+}
+.container .box {
+	width: 50%;
+	padding: 50px 0px;
+	margin: calc(100vh - 80vh) auto;
+	border-bottom: 1px solid #bbb;
+	background-image: linear-gradient(to bottom, #eee,#fff);
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.container .box .inputs {
+	display: block;
+	margin: 0px auto 20px auto;
+	text-align: center;
+}
+.container .box .inputs:last-child {
+	margin-bottom: 0px;
+}
+.container .box .inputs i {
+	width: 50px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.container .box input[type="text"], input[type="password"] {
+	border: 1px solid #ccc;
+	border-radius: 0px;
+	background-color: #fff;
+	outline:none;
+	text-indent: 3px;
+	width: 50%;
+	font:lighter 20px/16px "Arial",sans-serif;
+	color: #444;
+	padding: 10px 8px;
+}
+.container .box input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder {
+	font:lighter 16px/16px "Arial",sans-serif;
+	color: #555;
+}
+.container .box input[type="text"]:focus, input[type="password"]:focus {
+	box-shadow: 0px 3px 8px -5px rgba(0,0,0, 0.5);
+	border-color: #aaa;
+}
+.container .box input[type="submit"] {
+	width: 50%;
+}
+.title {
+	background-color:#fff;
+	display: none;
+	width:50%;
+	margin:0px auto;
+	padding:10px;
+	border: 1px solid #ddd;
+	border-bottom: none;
+	text-align: center;
+}
+.title header {
+	font:lighter 24px/24px 'Arial',sans-serif;
+	display: inline;
+	vertical-align: middle;
+}
+.title img {
+	width: 40px;
+	display: inline;vertical-align: middle;
+	margin-right: 20px;
+}
+.search {
+	width: 50%;
+	background-color: #fff;
+	display: block;
+	padding: 1%;
+	margin: 0px auto;
+	border: 1px solid #ddd;
+	border-bottom: none;
+}
+.search input {
+	width: 100%;
+	margin: 0px;
+	padding: 6px;
+	border:1px solid #bbb;
+	border-radius: 5px;
+	outline: none;
+	font: lighter 18px/16px "Georgia",serif;
+}
+#table {
+	background-color: #fff;
+	width: 60%;
+	display: none;
+	padding: 10px;
+	margin: 0px auto;
+	border: 1px solid #ddd;
+}
+table {
+	width: 100%;
+	font:lighter 16px/24px 'Georgia',sans-serif;
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+}
+table thead {
+	border-bottom: 1px solid #ddd;
+}
+table thead th {
+	border: 1px solid #ddd;
+	padding: 5px;
+}
+table tbody tr td {
+	border: 1px solid #ddd;
+	padding: 6px 10px;
+}
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@-webkit-keyframes fadeOut {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
